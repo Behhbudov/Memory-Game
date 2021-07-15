@@ -1,5 +1,5 @@
 const cedvel = document.getElementById("cedvel");
-let icon = ["empty","facebook","dribbble","tumblr","twitter","skype","pinterest","linkedin","instagram"]
+let icon = ["empty","facebook","dribbble","tumblr","twitter","skype","pinterest","linkedin","instagram"];
 let arr = [];
 let matrix = [];
 let mask = [];
