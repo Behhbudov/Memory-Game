@@ -44,7 +44,7 @@ function iopen(i, j) {
         prev[0] = i;
         prev[1] = j;
     } else {
-        setTimeout(check, 1000, i, j);
+        check(i, j)
     }
 }
 
@@ -53,7 +53,7 @@ function check(i, j) {
         mask[i][j] = 0;
         mask[ prev[0] ][ prev[1] ] = 0;
     }    
-    show();
+    setTimeout(show, 1000, i, j);
     prev = [];
 }
 
