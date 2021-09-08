@@ -1,5 +1,5 @@
 const cedvel = document.getElementById("cedvel");
-let icon = ["empty","bloggr","deviantart","digg","email","share","stumbleupon","vimeo","youtube"];
+let icons = ["empty","bloggr","deviantart","digg","email","share","stumbleupon","vimeo","youtube"];
 let arr = [];
 let matrix = [];
 let mask = [];
@@ -29,7 +29,7 @@ function show() {
     for (let i = 0; i < 4; i++) {
         kod += "<tr>";
         for (let j = 0; j < 4; j++) {
-            let img = 'icons/' + icon[ mask[i][j] ? matrix[i][j] : 0 ] + '.png';
+            let img = 'icons/' + icons[ mask[i][j] ? matrix[i][j] : 0 ] + '.png';
             kod += `<td><img onclick="iopen(${i}, ${j})" src="${img}" /></td>`;
         }
         kod += "</tr>";
